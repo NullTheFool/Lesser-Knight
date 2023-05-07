@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dstkipw15gxx2"]
+
+[ext_resource type="Shader" path="res://common/main.gdshader" id="1_7n6nd"]
+[ext_resource type="PackedScene" uid="uid://dfogvan4q32x4" path="res://levels/level.tscn" id="1_gvat8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iuwfp"]
+shader = ExtResource("1_7n6nd")
+
+[node name="Game" type="Node2D"]
+material = SubResource("ShaderMaterial_iuwfp")
+
+[node name="Level" parent="." instance=ExtResource("1_gvat8")]
+use_parent_material = true
