@@ -10,4 +10,3 @@ shader = ExtResource("1_7n6nd")
 material = SubResource("ShaderMaterial_iuwfp")
 
 [node name="Level" parent="." instance=ExtResource("1_gvat8")]
-use_parent_material = true
