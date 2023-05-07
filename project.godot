@@ -23,6 +23,11 @@ window/size/mode=2
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[editor]
+
+movie_writer/movie_file="/home/null/Videos/geimplei.avi"
+movie_writer/fps=30
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
