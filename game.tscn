@@ -38,5 +38,6 @@ shader = SubResource("Shader_gx3bg")
 
 [node name="Game" type="Node2D"]
 material = SubResource("ShaderMaterial_iuwfp")
+position = Vector2(-41, 0)
 
 [node name="Level" parent="." instance=ExtResource("1_gvat8")]
