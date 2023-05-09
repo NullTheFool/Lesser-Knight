@@ -1,43 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dstkipw15gxx2"]
+[gd_scene load_steps=2 format=3 uid="uid://dstkipw15gxx2"]
 
 [ext_resource type="PackedScene" uid="uid://dfogvan4q32x4" path="res://levels/level.tscn" id="1_gvat8"]
 
-[sub_resource type="Shader" id="Shader_gx3bg"]
-code = "shader_type canvas_item;
-render_mode unshaded;
-
-// Texture must have 'Filter'-flag enabled!
-
-// Automatic smoothing
-// independent of geometry and perspective
-vec4 texturePointSmooth(sampler2D smp, vec2 uv, vec2 pixel_size)
-{
-	vec2 ddx = dFdx(uv);
-	vec2 ddy = dFdy(uv);
-	vec2 lxy = sqrt(ddx * ddx + ddy * ddy);
-	
-	vec2 uv_pixels = uv / pixel_size;
-	
-	vec2 uv_pixels_floor = round(uv_pixels) - vec2(0.5f);
-	vec2 uv_dxy_pixels = uv_pixels - uv_pixels_floor;
-	
-	uv_dxy_pixels = clamp((uv_dxy_pixels - vec2(0.5f)) * pixel_size / lxy + vec2(0.5f), 0.0f, 1.0f);
-	
-	uv = uv_pixels_floor * pixel_size;
-	
-	return textureGrad(smp, uv + uv_dxy_pixels * pixel_size, ddx, ddy);
-}
-
-void fragment()
-{
-	COLOR = texturePointSmooth(TEXTURE, UV, TEXTURE_PIXEL_SIZE);
-}"
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_iuwfp"]
-shader = SubResource("Shader_gx3bg")
-
 [node name="Game" type="Node2D"]
-material = SubResource("ShaderMaterial_iuwfp")
 position = Vector2(-41, 0)
 
 [node name="Level" parent="." instance=ExtResource("1_gvat8")]
