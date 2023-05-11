@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Lesser-Knight"
+config/name="Lesser-knight"
 run/main_scene="res://game.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -22,11 +22,6 @@ window/size/viewport_height=360
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="viewport"
-
-[editor]
-
-movie_writer/movie_file="/home/null/Videos/geimplei.avi"
-movie_writer/fps=30
 
 [rendering]
 

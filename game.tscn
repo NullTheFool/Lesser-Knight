@@ -1,8 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dstkipw15gxx2"]
+[gd_scene load_steps=2 format=3 uid="uid://ddxa3ek1hiul6"]
 
-[ext_resource type="PackedScene" uid="uid://dfogvan4q32x4" path="res://levels/level.tscn" id="1_gvat8"]
+[ext_resource type="PackedScene" uid="uid://cahksgofh4bbl" path="res://levels/level.tscn" id="1_ucg66"]
 
 [node name="Game" type="Node2D"]
-position = Vector2(-41, 0)
 
-[node name="Level" parent="." instance=ExtResource("1_gvat8")]
+[node name="Level" parent="." instance=ExtResource("1_ucg66")]
