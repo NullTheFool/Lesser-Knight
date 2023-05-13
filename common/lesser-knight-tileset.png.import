@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxl064lyswif2"
-path="res://.godot/imported/idle.png-16e6ee4b137aadd2995119764a853180.ctex"
+uid="uid://dp85ruqbien4g"
+path="res://.godot/imported/lesser-knight-tileset.png-32070b3ccac43aca8960b2469a2268d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/sprites/idle.png"
-dest_files=["res://.godot/imported/idle.png-16e6ee4b137aadd2995119764a853180.ctex"]
+source_file="res://common/lesser-knight-tileset.png"
+dest_files=["res://.godot/imported/lesser-knight-tileset.png-32070b3ccac43aca8960b2469a2268d2.ctex"]
 
 [params]
 
